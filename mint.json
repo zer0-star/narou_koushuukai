@@ -2,8 +2,8 @@
   "name": "narou_koushuukai",
   "application": {
     "head": "assets/head.html",
-    "title": "narou_koushuukai",
-    "icon": "assets/favicon.png"
+    "title": "zer0-starの自己紹介",
+    "icon": "assets/images/icon.webp"
   },
   "external": {
     "stylesheets": [
