@@ -14,15 +14,15 @@ store Application {
 }
 
 routes {
-  / {
+  /narou_koushuukai/ {
     Application.setPage(Page::Home)
   }
 
-  /works {
+  /narou_koushuukai/#works {
     Application.setPage(Page::Works)
   }
 
-  /works/counter {
+  /narou_koushuukai/#counter {
     Application.setPage(Page::Counter)
   }
   
@@ -41,13 +41,13 @@ component Main {
       ]
 
       Page::Works => [
-        {"/", <{ "Home" }>},
+        {"#", <{ "Home" }>},
         {"", <{ "Works" }>}
       ]
 
       Page::Counter => [
-        {"/", <{ "Home" }>},
-        {"/works", <{ "Works" }>},
+        {"#", <{ "Home" }>},
+        {"#works", <{ "Works" }>},
         {"", <{ "Counter" }>}
       ]
 
@@ -83,7 +83,7 @@ component Main {
                 iconAfter = <></>,
                 label = "Home",
                 target = "",
-                href = "/")
+                href = "#")
             ]/>
         }
         breadcrumbs={ <Ui.Breadcrumbs items={ breadcrumbs }/> }

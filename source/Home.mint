@@ -38,7 +38,7 @@ component Home {
         </Ui.Box>
       </Ui.Row>
       <p> "こんにちは！zer0-starです！インターネットに囚われています(たすけてください)" </p>
-      <p> <a href="works"> "作品一覧" </a> </p>
+      <p> <a href="#works"> "作品一覧" </a> </p>
     </>
   }
 }
