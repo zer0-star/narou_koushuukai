@@ -944,7 +944,7 @@ var Mint = (function (exports) {
 	return exports;
 
 })({});
-const CACHE = '7c33760a7478f48013d042303cd53514d40ae3652fef9f809b5a2e9c1a416055'
+const CACHE = '1f3fbe20813c62cfd32fa8e1dc55418795ffacb6d5c9c653b423622f5d2b6071'
 const PRECACHE_URLS = [
   'assets/icon_457ed95fefbdeeff01c3f5b4d74845c1.webp',
   'assets/nunito-v16-latin-ext_latin-700_6e483e301899a8ab59b328ae7f155c29.woff',
