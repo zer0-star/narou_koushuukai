@@ -18,7 +18,7 @@ jobs:
           version: 0.16.0
       
       - run: mint install
-      - run: mint build -r
+      - run: mint build --skip-service-worker --relative
       
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
