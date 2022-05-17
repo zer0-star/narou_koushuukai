@@ -1,0 +1,27 @@
+name: Build and Deploy GH Pages
+
+on:
+  push:
+    branches: [ main ]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+        
+      - uses: fabasoad/setup-mint-action@main
+        with:
+          version: 0.16.0
+      
+      - run: mint install
+      - run: mint build -r
+      
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.

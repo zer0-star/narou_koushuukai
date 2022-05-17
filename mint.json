@@ -1,0 +1,24 @@
+{
+  "name": "narou_koushuukai",
+  "application": {
+    "head": "assets/head.html",
+    "title": "narou_koushuukai",
+    "icon": "assets/favicon.png"
+  },
+  "external": {
+    "stylesheets": [
+    ]
+  },
+  "source-directories": [
+    "source"
+  ],
+  "test-directories": [
+    "tests"
+  ],
+  "dependencies": {
+    "mint-ui": {
+      "repository": "https://github.com/mint-lang/mint-ui",
+      "constraint": "5.0.0 <= v < 6.0.0"
+    }
+  }
+}
