@@ -3,6 +3,7 @@ enum Page {
   Home
   Works
   Counter
+  TodoList
 }
 
 store Application {
@@ -24,6 +25,10 @@ routes {
 
   /narou_koushuukai/#counter {
     Application.setPage(Page::Counter)
+  }
+
+  /narou_koushuukai/#todolist {
+    Application.setPage(Page::TodoList)
   }
   
   * {
@@ -51,6 +56,12 @@ component Main {
         {"", <{ "Counter" }>}
       ]
 
+      Page::TodoList => [
+        {"#", <{ "Home" }>},
+        {"#works", <{ "Works" }>},
+        {"", <{ "TodoList" }>}
+      ]
+
       Page::NotFound => []
     }
   }
@@ -60,6 +71,7 @@ component Main {
       Page::Home => <Home/>
       Page::Works => <Works/>
       Page::Counter => <Works.Counter/>
+      Page::TodoList => <Works.TodoList/>
       Page::NotFound => <{ "404!" }>
     }
   }
