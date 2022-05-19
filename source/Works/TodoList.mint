@@ -74,7 +74,7 @@ component Works.TodoList {
   state sortDirection = "asc"
 
   get baseUri {
-    "http://naro-todo-server.temma.trap.show/#{username}"
+    "https://temma.trap.show/naro-todo-server/#{username}"
   } 
 
   fun refresh {
