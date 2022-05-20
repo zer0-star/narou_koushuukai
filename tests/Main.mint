@@ -1,9 +1,11 @@
 suite "Main" {
   test "Greets Mint" {
     with Test.Html {
-      <Main/>
+      <Works.Counter/>
       |> start()
-      |> assertTextOf("a", "Learn Mint")
+      |> assertTextOf("p", "number: 0")
+      |> triggerClick("button")
+      |> assertTextOf("p", "number: 1")
     }
   }
 }
